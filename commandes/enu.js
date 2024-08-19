@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu2", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "men", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -36,24 +36,25 @@ const date = moment().format('DD/MM/YYYY');
 │▫️╭─────────────☉
 │▫️│𝐎𝐖𝐍𝐄𝐑 ➦  : ${s.OWNER_NAME}
 │▫️|𝐃𝐀𝐓𝐄➦: ${date}
-│▫️│𝐏𝐑𝐄𝐅 𝐈 𝐗➦ : ${s.PREFIXE}
+│▫️|𝐓𝐈𝐌𝐄➦: ${time}
+│▫️│𝐏𝐑𝐄𝐅𝐈𝐗➦ : ${s.PREFIXE}
 │▫️│𝐌𝐎𝐃𝐄➦ : ${mode}
 │▫️│𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒➦ : ${cm.length} 
-│▫️│𝐑𝐀𝐌➦ * : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│▫️│𝐑𝐀𝐌➦ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │▫️│𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌➦ : ${os.platform()}
-│▫️│𝐃𝐄 𝐕𝐄𝐋𝐎𝐏𝐄𝐑➦: *𝐏𝐎𝐖𝐄𝐑𝐄𝐃➦ 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇*
+│▫️│𝐃𝐄 𝐕𝐄𝐋𝐎𝐏𝐄𝐑➦: *𝐂𝐎𝐁𝐔≈≈𝐓𝐄𝐂𝐇*
 │▫️╰──────────────☉
 ╰──────────────────☉
 ╭───────────────☉
  ☉〘𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}〙☉
-> ╔═══════════════════════════════╗
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃➦ 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇
-> ╚═══════════════════════════════╝
+> ╔═══════════════════╗
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐂𝐎𝐁𝐔≈≈𝐓𝐄𝐂𝐇
+> ╚═══════════════════╝
 ╰───────────────☉\n`;
     
 let menuMsg = `
 ╭─────────☉
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃➦ 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇*
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐂𝐎𝐁𝐔≈≈𝐓𝐄𝐂𝐇
 ╰─────────☉
 
  *⚡𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡*
@@ -63,7 +64,7 @@ let menuMsg = `
         menuMsg += ` ╭──────☉ *${cat}* ☉─────▸`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-│•│ ${cmd}`;
+│👉│ ${cmd}`;
         }
         menuMsg += `
 ╰────────────···▸▸ \n`
@@ -74,7 +75,9 @@ let menuMsg = `
 *———————————————————————————*
 |▫️𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}
 > ╔═══════════════════════════════╗
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃➦ 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃
+> 👇👇👇👇👇
+> 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇
 > ╚═══════════════════════════════╝
 *———————————————————————————*
 `;
