@@ -36,7 +36,6 @@ const date = moment().format('DD/MM/YYYY');
 │▫️╭─────────────☉
 │▫️│𝐎𝐖𝐍𝐄𝐑 ➦  : ${s.OWNER_NAME}
 │▫️|𝐃𝐀𝐓𝐄➦: ${date}
-│▫️|𝐓𝐈𝐌𝐄➦: ${time}
 │▫️│𝐏𝐑𝐄𝐅𝐈𝐗➦ : ${s.PREFIXE}
 │▫️│𝐌𝐎𝐃𝐄➦ : ${mode}
 │▫️│𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒➦ : ${cm.length} 
