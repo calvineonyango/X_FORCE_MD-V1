@@ -372,7 +372,7 @@ zokou({ nomCom: "url", categorie: "Conversion", reaction: "👨🏿‍💻" }, a
 
       repondre(telegraphUrl);
   } catch (error) {
-      console.error('Erreur lors de la création du lien Telegraph :', error);
-      repondre('Opps error');
+      console.error('Apoint of correction :', error);
+      repondre('Sorr i have a break down 😊');
   }
 });
