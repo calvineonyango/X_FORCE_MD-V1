@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "men", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -71,14 +71,14 @@ let menuMsg = `
 
     menuMsg += `
             
-*———————————————————————————*
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 |▫️𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}
-> ╔══════════════════════╗
+> ╔═════════════════════╗
 > 𝐏𝐎𝐖𝐄𝐑𝐄𝐃
 > 👇👇👇👇👇
 > 𝐁𝐘 𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇
-> ╚══════════════════════╝
-*———————————————————————————*
+> ╚═════════════════════╝
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 `;
 
    var lien = mybotpic();
