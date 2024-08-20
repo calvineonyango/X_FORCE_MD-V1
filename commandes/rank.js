@@ -53,7 +53,7 @@ function get_level_exp(xp) {
         { level: 47, xpThreshold: 1185000},
         { level: 48, xpThreshold: 1240000},
         { level: 49, xpThreshold: 1295000},
-        { level: 'Zak-GOD', xpThreshold: 2000000}
+        { level: 'Zk-GOD', xpThreshold: 2000000}
     ];
 
     let level = 0;
@@ -82,7 +82,7 @@ module.exports = {
 } ;
 
 zokou( {
-  nomCom : "ran",
+  nomCom : "rank",
  categorie : "Fun",
    }, 
    async(dest,zk, commandeOptions)=> {
@@ -134,7 +134,7 @@ zokou( {
     
     
          let msg = `
-┏━━*𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}* Rank━━┓
+┏━━⬡┃TKM-bot┃⬡Rank⬡━━┓
          
     *Name :* @${auteurMsgRepondu.split("@")[0]}
     
@@ -146,7 +146,7 @@ zokou( {
 
     *Messages :* ${rank.messages}
     
-   ┕━━☉☉☉☉━━┙`
+   ┕━━⬡⬡ ⬡⬡━━┙`
     
      zk.sendMessage( 
         dest,
@@ -210,7 +210,7 @@ zokou( {
     
     
          let msg = `
-┏━━*𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}* Rank━━┓
+┏━━⬡┃TKM bot┃⬡Rank⬡━━┓
      
   *Name :* ${nomAuteurMessage}
 
@@ -243,7 +243,7 @@ zokou( {
 }) ;
 
 zokou( {
-  nomCom : "tpra",
+  nomCom : "toprank",
  categorie : "Fun",
    }, 
    async(dest,zk, commandeOptions)=> {
@@ -251,7 +251,7 @@ zokou( {
     const {ms , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━*Gojou-md* Top-Rank━┓\n\n`
+       let msg = `┏━⬡┃TKM bot┃⬡Top-Rank━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;

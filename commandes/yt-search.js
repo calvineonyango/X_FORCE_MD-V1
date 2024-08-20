@@ -21,17 +21,17 @@ zokou({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, 
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}*";
+    captions += "\n======\n┃TKM bot┃";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
   } catch (error) {
-    repondre("sorry please try later : " + error);
+    repondre("Erreur lors de la procédure : " + error);
   }
 });
 
 zokou({
-  nomCom: "ym4",
+  nomCom: "ytmp4",
   categorie: "Download",
   reaction: "🎥"
 }, async (origineMessage, zk, commandeOptions) => {
@@ -44,7 +44,7 @@ zokou({
 
   const topo = arg.join(" ");
   try {
-    const search = await yts(topo);
+    /* const search = await yts(topo);
     const videos = search.videos;
 
     if (videos && videos.length > 0 && videos[0]) {
@@ -77,23 +77,23 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "*𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "┃TKM bot┃", gifPlayback: false }, { quoted: ms });
 
     });
 
     fileStream.on('error', (error) => {
-      console.error('sorry please try later :', error);
-      repondre('sorry please try later.');
+      console.error('Erreur lors de l\'écriture du fichier vidéo :', error);
+      repondre('Une erreur est survenue lors de l\'écriture du fichier vidéo.');
     });
 
   } catch (error) {
-    console.error('sorry please try later :', error);
-    repondre('sorry please try later.' + error);
+    console.error('Erreur lors de la recherche ou du téléchargement de la vidéo :', error);
+    repondre('Une erreur est survenue lors de la recherche ou du téléchargement de la vidéo.' + error);
   }
 });
 
 zokou({
-  nomCom: "ym3",
+  nomCom: "ytmp3",
   categorie: "Download",
   reaction: "💿"
 }, async (origineMessage, zk, commandeOptions) => {
@@ -119,16 +119,16 @@ zokou({
     fileStream.on('finish', () => {
       // Envoi du fichier audio en utilisant l'URL du fichier local
       zk.sendMessage(origineMessage, { audio: { url: `./${filename}` }, mimetype: 'audio/mp4' }, { quoted: ms, ptt: false });
-      console.log("sorry please try later!");
+      console.log("Envoi du fichier audio terminé !");
     });
 
     fileStream.on('error', (error) => {
-      console.error('sorry please try later :', error);
-      repondre('sorry please try later.');
+      console.error('Erreur lors de l\'écriture du fichier audio :', error);
+      repondre('Une erreur est survenue lors de l\'écriture du fichier audio.');
     });
 
   } catch (error) {
-    console.error('sorry please try later:', error);
-    repondre('sorry please try later');
+    console.error('Erreur lors de la recherche ou du téléchargement de la vidéo :', error);
+    repondre('Une erreur est survenue lors de la recherche ou du téléchargement de la vidéo.');
   }
 });

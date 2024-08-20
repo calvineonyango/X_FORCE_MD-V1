@@ -6,7 +6,7 @@ const JavaScriptObfuscator = require("javascript-obfuscator");
 zokou(
     {
         nomCom: "encode",
-        categorie: "general",
+        categorie: "other",
         reaction: "🥸"
     },
 
