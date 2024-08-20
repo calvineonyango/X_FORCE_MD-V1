@@ -3,7 +3,7 @@ const { Sticker, StickerTypes } = require("wa-sticker-formatter");
 const {zokou} = require("../framework/zokou");
 
 zokou({
-  nomCom: "stickersearch",
+  nomCom: "stifo",
   categorie: 'Search',
   reaction: "🍁"
 },
@@ -33,17 +33,17 @@ async (dest, zk, commandeOptions) => {
 
     const stickerMess = new Sticker(gifUrl, {
       pack: packname,
-      author: 'TKM-bot',
+      author: '𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}',
       type: StickerTypes.FULL,
       categories: ["🤩", "🎉"],
       id: "12345",
-      quality: 60,
+      quality: 80,
       background: "transparent",
     });
     const stickerBuffer2 = await stickerMess.toBuffer();
     zk.sendMessage(dest, { sticker: stickerBuffer2 }, { quoted: ms }); }
   } catch (error) {
-    console.error("Erreur lors de la recherche de stickers :", error);
-    repondre("Erreur lors de la recherche de stickers.");
+    console.error("sorry I am on breakdown 😩", error);
+    repondre("sorry I am on breakdown 😩.");
   }
 });
