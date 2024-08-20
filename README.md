@@ -9,7 +9,7 @@
  
 ****
 </p>
-    <img alt="X-FORCE-MD" width="500" height="420" src="https://telegra.ph/file/ebfe42de04f5cb5a6e647.jpg">
+    <img alt="X-FORCE-MD" width="750" height="650" src="https://telegra.ph/file/c1487847e3e99da03ed2f.jpg">
     
 ****
 <br>
