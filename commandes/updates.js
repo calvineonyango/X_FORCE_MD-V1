@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "Tm-me", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tm-me", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
     let z = 'Hello 👋\n\nClick The link below to communicate with⬡┃𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇┃⬡ on Telegram\n\n';
     let d = 'https://t.me/obu254';
@@ -13,7 +13,7 @@ zokou({ nomCom: "Tm-me", reaction: "😌", nomFichier: __filename }, async (dest
 });
 console.log("mon test");
 
-zokou({ nomCom: "Channel", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "channel", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
     let z = 'Hello 👋\n\n follow ⬡┃𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇┃⬡follow me on Twitter\n\n';
     let d = 'https://www.twitter.com/CalvinCa5564';
