@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://telegra.ph/file/1e338aa269a3e1586f52a.jpg",
+  "logo": "https://telegra.ph/file/c1487847e3e99da03ed2f.jpg",
   "repository": "https://github.com/calvineonyango/X_FORCE_MD-V1",
   "succes_url": "/",
   "stack": "container",
@@ -39,7 +39,7 @@
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value": "https://telegra.ph/file/1e338aa269a3e1586f52a.jpg",
+      "value": "https://telegra.ph/file/c1487847e3e99da03ed2f.jpg",
       "required": false
     },
     "PUBLIC_MODE": {
@@ -63,7 +63,7 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇"
+      "value": "𝐂𝐎𝐁𝐔≈≈𝐓𝐄𝐂𝐇"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
