@@ -106,7 +106,7 @@ zokou({
         caption: `*𝐗═𝐅𝐎𝐑𝐂𝐄═𝐌𝐃{𝐕𝐎𝐋²}, I'll get you the video*\n\nVideo name : _${Element.title}_
 Time : _${Element.timestamp}_
 Url : _${Element.url}_
-_\n*Gojou-md* is downloading the file_\n\n`
+_\n*𝛸-𝐹𝛩𝑅𝐶𝛯-𝛭𝐷 𝛻2* is downloading the file_\n\n`
       };
 
       zk.sendMessage(origineMessage, InfoMess, { quoted: ms });
