@@ -37,7 +37,7 @@ error wrong format
                   setTimeout(function() {
                     repondre(arg.slice(1).join(" "));
                     resolve();
-                  }, 1000000 * i);
+                  }, 1000 * i);
                 })
               )
             }
