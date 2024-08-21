@@ -2,23 +2,23 @@
 
 Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "tkminc", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "twit", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Hello 👋\n\nClick The link below to Join ⬡┃TKM inc┃⬡ WhatsApp channel\n\n';
-    let d = 'https://whatsapp.com/channel/0029VadFn9M545v25zjEWI3I';
+    let z = 'Hello 👋\n\nClick The link below to follow ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡ on Twitter \n\n';
+    let d = 'https://www.twitter.com/CalvinCa5564';
     let varmess = z + d;
-    var img = 'https://telegra.ph/file/e07a3d933fb4cad0b3791.jpg';
+    var img = 'https://telegra.ph/file/12dce49afac3980cc1085.jpg';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
     //console.log("montest")
 });
 console.log("mon test");
 
-zokou({ nomCom: "channel", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tm", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Hello 👋\n\nClick The link below to Join ⬡┃Cod3Uchiha┃⬡ WhatsApp Channel\n\n';
-    let d = 'https://whatsapp.com/channel/0029VaKjSra9WtC0kuJqvl0g';
+    let z = 'Hello 👋\n\nClick The link below to message⬡┃𝐂𝐀𝐋𝐕𝐈𝐍𝐄 𝐎𝐁𝐎𝐔𝐎𝐑𝐎≈≈𝐓𝐄𝐂𝐇┃⬡ on Telegram\n\n';
+    let d = 'https://t.me/obu254';
     let varmess = z + d;
-    var img = 'https://telegra.ph/file/e07a3d933fb4cad0b3791.jpg';
+    var img = 'https://telegra.ph/file/01174504d05ad533ad2e5.png';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
     //console.log("montest")
 });
