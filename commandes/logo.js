@@ -4,7 +4,7 @@ zokou({ nomCom: "hacker",
     categorie: "Logo", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
     const { prefixe, arg, ms, repondre } = commandeOptions;
     if (!arg || arg == "") {
-        repondre("*__Exemple : * " + prefixe + "hacker TKM bot");
+        repondre("*__Exemple : * " + prefixe + "hacker cobu-tech");
         return;
     }
     try {
@@ -15,7 +15,7 @@ zokou({ nomCom: "hacker",
         // console.log("&€"+res);
       //  let lien = "https://e1.yotools.net" + res;
         repondre("* processing...*");
-        await zk.sendMessage(origineMessage, { image: { url:anu.image}, caption: " \t Logo by ⬡┃TKM bot┃⬡" }, { quoted: ms });
+        await zk.sendMessage(origineMessage, { image: { url:anu.image}, caption: " \t Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -24,7 +24,7 @@ zokou({ nomCom: "hacker",
 zokou({ nomCom: "dragonball", categorie: "Logo", reaction: "🐉" }, async (dest, zk, commandeOptions) => {
     let { arg, repondre, prefixe, ms } = commandeOptions;
     try {
-        const noArgMsg = `*_EXEMPLE *:  ${prefixe}dragonball TKM bot`;
+        const noArgMsg = `*_EXEMPLE *:  ${prefixe}dragonball bot`;
         //  if(arg=='') {await zok.sendMessage(dest,{text:noArgMsg},{quoted:infoMessage}); return;}
         if (arg == '' || !arg) {
             repondre(noArgMsg);
@@ -39,7 +39,7 @@ zokou({ nomCom: "dragonball", categorie: "Logo", reaction: "🐉" }, async (dest
         await zk.sendMessage(dest, { text: " *\t Traitement en cours ...*" }, { quoted: ms });
        // var idImg = Object.values(imgInfo)[3];
        
-        await zk.sendMessage(dest, { image: { url: imgInfo.image }, caption: " \t Logo by ⬡┃TKM bot┃⬡" }, { quoted: ms });
+        await zk.sendMessage(dest, { image: { url: imgInfo.image }, caption: " \t Logo by ⬡𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}⬡" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -50,7 +50,7 @@ zokou({ nomCom: "naruto", categorie: "Logo", reaction: "⛩" }, async (dest, zk,
     let { ms, arg, repondre, prefixe } = commandeOptions;
     try {
         if (!arg || arg == '') {
-            repondre("*_Exemple : * " + prefixe + "naruto Cod3Uchiha");
+            repondre("*_Exemple : * " + prefixe + "naruto cobu-tech");
             return;
         }
         var nar = "https://en.ephoto360.com/naruto-shippuden-logo-style-text-effect-online-808.html";
@@ -59,7 +59,7 @@ zokou({ nomCom: "naruto", categorie: "Logo", reaction: "⛩" }, async (dest, zk,
         var radio2 = "e0723d60-fc0d-421f-bf8f-a9b9b61e4be6";
         var img = await mumaker.ephoto("https://en.ephoto360.com/naruto-shippuden-logo-style-text-effect-online-808.html", arg.join(' '));
         
-        await zk.sendMessage(dest, { image: { url: img.image }, caption: "\t\t Logo by ⬡┃TKM bot┃⬡" }, { quoted: ms });
+        await zk.sendMessage(dest, { image: { url: img.image }, caption: "\t\t Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -91,10 +91,10 @@ zokou({ nomCom: "naruto", categorie: "Logo", reaction: "⛩" }, async (dest, zk,
 zokou({ nomCom: "didong", categorie: "Logo", reaction: "📱" }, async (dest, zk, commandeOptions) => {
     let { arg, repondre, prefixe, ms } = commandeOptions;
    try {
-     var titre = "\tLogo by ⬡┃TKM bot┃⬡";
+     var titre = "\tLogo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡";
       var lien = "https://ephoto360.com/tao-anh-che-vui-tu-choi-cuoc-goi-voi-ten-cua-ban-930.html";
         if (!arg || arg == "") {
-           repondre(`*exemple :* ${prefixe}didong TKM bot`)
+           repondre(`*exemple :* ${prefixe}didong force-md`)
             return ;
         }
      
@@ -114,12 +114,12 @@ zokou({ nomCom: "didong", categorie: "Logo", reaction: "📱" }, async (dest, zk
 zokou({nomCom : "wall",categorie : "Logo",reaction : "👍"} , async (dest,zk,commandeOptions) =>{
 
   const {arg,repondre,ms,prefixe} = commandeOptions;
-  if(!arg[0]) { repondre( `Exemple of using commande:\n ${prefixe}wall TKM bot` ); return ;}
+  if(!arg[0]) { repondre( `Exemple of using commande:\n ${prefixe}wall Force bot` ); return ;}
    let text = arg.join(" ")
    mumaker.textpro("https://textpro.me/break-wall-text-effect-871.html", text)
 .then((data) =>{
- zk.sendMessage(dest,{image : { url : data.image},caption : 'Logo by'},{quoted:ms})
-}) 
+  await zk.sendMessage(dest, { image: { url: img.image }, caption: "\t\t Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡" }, { quoted: ms });
+}
 .catch(console.log)
 })
 ;
@@ -133,7 +133,7 @@ zokou({nomCom: "summer", categorie: "Logo", reaction: "🌞"}, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-sunset-light-text-effects-online-for-free-1124.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: "Logo by' }, { quoted: ms });
     })
     .catch(console.error);
 });
@@ -298,10 +298,9 @@ zokou({ nomCom: "transformer", categorie: "Logo", reaction: "🤖" }, async (des
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-a-transformer-text-effect-online-1035.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("Honda breakdown sorry 🥺", err);
     });
 });
 
@@ -313,12 +312,11 @@ zokou({ nomCom: "thunder", categorie: "Logo", reaction: "⚡" }, async (dest, zk
   }
 
   const text = arg.join(" ");
-  mumaker.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html", text)
+  mumaker.textpro("https://textpro.me/crea-online-thunder-text-effect-generator-1031.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -332,9 +330,8 @@ zokou({ nomCom: "harrypotter", categorie: "Logo", reaction: "🧙‍♂️" }, a
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
       console.error("Une erreur s'est produite :", err);
     });
 });
@@ -349,10 +346,9 @@ zokou({ nomCom: "cat", categorie: "Logo", reaction: "🪟" }, async (dest, zk, c
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -368,10 +364,9 @@ zokou({ nomCom: "whitegold", categorie: "Logo", reaction: "💫" }, async (dest,
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/elegant-white-gold-3d-text-effect-online-free-1070.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -385,10 +380,9 @@ zokou({ nomCom: "lightglow", categorie: "Logo", reaction: "🌟" }, async (dest,
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-light-glow-sliced-text-effect-online-1068.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -402,10 +396,9 @@ zokou({ nomCom: "thor", categorie: "Logo", reaction: "🔨" }, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-thor-logo-style-text-effect-online-1064.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -419,10 +412,9 @@ zokou({ nomCom: "neon", categorie: "Logo", reaction: "💡" }, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/neon-text-effect-online-879.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by' }, { quoted: ms });
-    })
-    .catch((err) => {
-      console.error("Une erreur s'est produite :", err);
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}' }, { quoted: ms });
+    }catch((err) => {
+      console.error("under breakdown sorry 🥺", err);
     });
 });
 
@@ -434,11 +426,11 @@ zokou({nomCom:"purple",categorie:"Logo",reaction:"🧳"},async(dest,zk,commandeO
     try{
       if(!arg||arg=="")
   {
-    repondre(prefixe+"purple zokou");return;}
+    repondre(prefixe+"purple cobu");return;}
       const lien="https://en.ephoto360.com/purple-text-effect-online-100.html"
       var img = await mumaker.ephoto(lien,arg);
       repondre(" processing ...")
-      await zk.sendMessage(dest,{image:{url:img.image},caption:"      Logo by ⬡┃TKM bot┃⬡"});
+      await zk.sendMessage(dest,{image:{url:img.image},caption:"      Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"});
     }catch(e){repondre(e)}
   
 })
@@ -450,14 +442,14 @@ zokou({nomCom:"gold",categorie:"Logo",reaction:"🧚🏿‍♀️"},async(dest,z
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"gold Takudzwa");return;
+        repondre(prefixe+"gold cobu");return;
       }
 
-    var lien="https://en.ephoto360.com/modern-gold-4-213.html";
+    var lien="https://en.ephoto360.com/modern-gold-6-213.html";
 
     var img = await mumaker.ephoto(lien,arg);
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃TKM bot┃⬡"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -469,15 +461,16 @@ zokou({nomCom:"arena",categorie:"Logo",reaction:"🥵"},async(dest,zk,commandeOp
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"arena TKM bot");return;
+        repondre(prefixe+"arena cobu");return;
       }
 
     var lien="https://en.ephoto360.com/create-cover-arena-of-valor-by-mastering-360.html";
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃TKM bot┃⬡"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
   }catch(e){repondre(e)}
+    
 })
 
 zokou({nomCom:"incandescent",categorie:"Logo",reaction:"😋"},async(dest,zk,commandeOptions)=>{
@@ -487,13 +480,68 @@ zokou({nomCom:"incandescent",categorie:"Logo",reaction:"😋"},async(dest,zk,com
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"incandescent Takudzwa");return;
+        repondre(prefixe+"incandescent cobu ");return;
       }
 
-    var lien="https://en.ephoto360.com/text-effects-incandescent-bulbs-219.html";
+    var lien="https://en.ephoto360.com/create-text-effects-incandescent-bulbs-219.html";
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃TKM bot┃⬡"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
   }catch(e){repondre(e)}
 })
+    
+
+zokou({nomCom:"marvel",categorie:"Logo",reaction:"😋"},async(dest,zk,commandeOptions)=>{
+
+
+  let {ms,arg,prefixe,repondre}=commandeOptions;
+  try{
+      if(!arg||arg=="")
+      {
+        repondre(prefixe+"mrvel cobu ");return;
+      }
+
+    var lien="https://en.ephoto360.com/create-text-effects-marvel-logo-online-219.html";
+
+    var img = await mumaker.ephoto(lien,arg.join(' '));
+   repondre("processing ...")
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
+  }catch(e){repondre(e)}
+})
+    zokou({nomCom:"pencil",categorie:"Logo",reaction:"🥵"},async(dest,zk,commandeOptions)=>{
+
+
+  let {ms,arg,prefixe,repondre}=commandeOptions;
+  try{
+      if(!arg||arg=="")
+      {
+        repondre(prefixe+"pencil cobu");return;
+      }
+
+    var lien="https://en.ephoto360.com/create-text-effects-pencil-writings-on-a-paper-online-360.html";
+
+    var img = await mumaker.ephoto(lien,arg.join(' '));
+   repondre("processing ...")
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
+  }catch(e){repondre(e)}
+})
+
+zokou({nomCom:"magma",categorie:"Logo",reaction:"😋"},async(dest,zk,commandeOptions)=>{
+
+
+  let {ms,arg,prefixe,repondre}=commandeOptions;
+  try{
+      if(!arg||arg=="")
+      {
+        repondre(prefixe+"magma vobu");return;
+      }
+
+    var lien="https://en.ephoto360.com/create-text-effects-magma-online-219.html";
+
+    var img = await mumaker.ephoto(lien,arg.join(' '));
+   repondre("processing ...")
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" Logo by ⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡"},{quoted:ms})
+  }catch(e){repondre(e)}
+})
+    
