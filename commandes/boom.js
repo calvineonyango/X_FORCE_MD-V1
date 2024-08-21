@@ -5,7 +5,7 @@ const conf = require("../set");
 
 zokou(
   {
-    nomCom: 'boom',
+    nomCom: 'spam',
     categorie: 'Mods',
     reaction: '😈',
   }, 
@@ -23,7 +23,7 @@ zokou(
           if (!arg[0] || !arg[1] || arg[0] < 0){
             repondre(`
 error wrong format
-> try: ${conf.PREFIXE}boom 10 hey `);
+> try: ${conf.PREFIXE}spam 10 hey `);
               return;
           } else if (parseInt(arg[0]) > limit) {
             repondre(`can't send over ${limit} maessages`)
@@ -37,7 +37,7 @@ error wrong format
                   setTimeout(function() {
                     repondre(arg.slice(1).join(" "));
                     resolve();
-                  }, 1000 * i);
+                  }, 1000000 * i);
                 })
               )
             }
