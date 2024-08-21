@@ -7,7 +7,7 @@ zokou(
     async (dest, zk, commandeOptions) => {
         console.log("Commande saisie !!!s");
         let z =
-            "*𝕀 𝕒𝕞 𝕏-𝔽𝕆ℝℂ𝔼-𝕄𝔻𝕧𝟚*\n\n " +
+            "*𝕀 𝕒𝕞 I 𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}*\n\n " +
             "i'm a whatsapp bot multi-device ctra";
         let d = " 𝕓𝕪 *ℂ𝕒𝕝𝕧𝕚𝕟𝕖 𝕆𝕟𝕪𝕒𝕟𝕘𝕠*";
         let varmess = z + d;
@@ -34,7 +34,7 @@ await  zok.sendMessage(origineMessage,  { image:{url:img},caption:varmess});
 
 
 zokou(
-      { nomCom: "tes", reaction: "😌"},
+      { nomCom: "mapdev", reaction: "😌"},
   async (dest,zk,commandOptions) => {
     const { ms } = commandOptions;
 const sentMsg1  = await zk.sendMessage(dest, { text: 'oh hello there' })
@@ -52,7 +52,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Jeff Singh\n' // full name
             + 'ORG:Ashoka Uni;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=911234567890:+91 12345 67890\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=254796281776:+254796281776\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 const sentMsg5  = await zk.sendMessage(
     dest,
