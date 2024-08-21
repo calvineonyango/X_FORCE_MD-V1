@@ -45,7 +45,7 @@ const sentMsg3  = await zk.sendMessage(dest, { text: '@12345678901', mentions: [
 // send a location!
 const sentMsg4  = await zk.sendMessage(
     dest, 
-    { location: { degreesLatitude: 24.121231, degreesLongitude: 55.1121221 } }
+    { location: { url : "https://maps.app.goo.gl/qkkPLYKoT4mH7gGp9"} }
 )
 // send a contact!
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
