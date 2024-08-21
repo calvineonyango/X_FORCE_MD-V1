@@ -17,7 +17,7 @@ zokou(
     const limit = conf.SPAM_MESSAGE_LIMIT;
 
     if (!superUser) {
-      repondre('You are not authorised to use this  command💔💔💔!!!');
+      repondre('You are not authorised to use this  command!!!');
       return;
     } else{
           if (!arg[0] || !arg[1] || arg[0] < 0){
