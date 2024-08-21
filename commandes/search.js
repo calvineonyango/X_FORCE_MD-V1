@@ -34,10 +34,10 @@ async function githubstalk(user) {
 
 zokou(
   {
-    nomCom: 'github',
+    nomCom: 'git',
     alias: ['githubstalk'],
     categorie: 'Search',
-    reaction: '🔎'
+    reaction: '😹'
   },
   
   async (dest, zk, {ms, arg, repondre}) => {
