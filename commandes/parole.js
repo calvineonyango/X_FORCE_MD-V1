@@ -18,7 +18,7 @@ zokou({ nomCom: "lyrics",
 
     if (lyrics.error) return repondre("no lyrics found");
 
-    let msg = `---------⬡┃TKM bot┃⬡--------
+    let msg = `---------⬡┃𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}┃⬡--------
 
 * *Artist :* ${lyrics.artist}
 
