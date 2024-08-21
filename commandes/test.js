@@ -58,7 +58,7 @@ const sentMsg5  = await zk.sendMessage(
     dest,
     { 
         contacts: { 
-            displayName: 'Jeff', 
+            displayName: '𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2}', 
             contacts: [{ vcard }] 
         }
     }
@@ -83,7 +83,7 @@ const sentMsg6 = await zk.sendMessage(dest, buttonMessage)
 //send a template message!
 const templateButtons = [
     {index: 1, urlButton: {displayText: '⭐ Star Baileys on GitHub!', url: 'https://github.com/adiwajshing/Baileys'}},
-    {index: 2, callButton: {displayText: 'Call me!', phoneNumber: '+1 (234) 5678-901'}},
+    {index: 2, callButton: {displayText: 'Call me!', phoneNumber: '+254796281776'}},
     {index: 3, quickReplyButton: {displayText: 'This is a reply, just like normal buttons!', id: 'id-like-buttons-message'}},
 ]
 
