@@ -7,11 +7,11 @@ zokou(
     async (dest, zk, commandeOptions) => {
         console.log("Commande saisie !!!s");
         let z =
-            "Hello my name is  *⬡TKM⬡* \n\n " +
-            "i'm a whatsapp bot multi-device";
-        let d = " by *Cod3Uchiha*";
+            "*𝕀 𝕒𝕞 𝕏-𝔽𝕆ℝℂ𝔼-𝕄𝔻𝕧𝟚*\n\n " +
+            "i'm a whatsapp bot multi-device ctra";
+        let d = " 𝕓𝕪 *ℂ𝕒𝕝𝕧𝕚𝕟𝕖 𝕆𝕟𝕪𝕒𝕟𝕘𝕠*";
         let varmess = z + d;
-        var img = "https://telegra.ph/file/e07a3d933fb4cad0b3791.jpg";
+        var VIDEO = "https://telegra.ph/file/e58d74d5b62f70cda1618.mp4";
         await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
         //console.log("montest")
     }
@@ -34,7 +34,7 @@ await  zok.sendMessage(origineMessage,  { image:{url:img},caption:varmess});
 
 
 zokou(
-      { nomCom: "testb", reaction: "😌"},
+      { nomCom: "tes", reaction: "😌"},
   async (dest,zk,commandOptions) => {
     const { ms } = commandOptions;
 const sentMsg1  = await zk.sendMessage(dest, { text: 'oh hello there' })
