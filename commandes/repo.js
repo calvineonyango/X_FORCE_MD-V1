@@ -34,12 +34,12 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-   *X_FORCE-MD{V²} IMPORTANT INFO* 
+   *𝚾-𝐅𝚯𝚪𝐂𝚵-𝚳𝐃{𝛁𝚯𝐋𝐔𝚳𝚵2} IMPORTANT INFO* 
 ❒───────────────────❒
 *GITHUB LINK*
 > https://github.com/calvineonyango/X_FORCE_MD-V1
 *Session*
-> https://cobugenerator-39ae8f825e4d.herokuapp.com/
+> *https://cobu-tech-factory-1.onrender.com*
 *FOR MORE INFO TAP ON THE LINKS BELOW*
 > *Telegram channel* https://t.me/+-B6ymywjkJI5YmI8
 > *Telegram me*      https://t.me/obu254
