@@ -6,7 +6,7 @@ const { format, styletext } = require(__dirname + "/../framework/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "m", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre } = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -49,15 +49,16 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
 ╔════---------
-║    Préfixe : ${s.PREFIXE}
-║    Owner : ${s.OWNER_NAME}    
-║    Mode : ${mode}
-║    Commandes:${cm.length}
-║    Date : ${date}
-║    Heure : ${temps}
-║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-║    Plateforme : ${os.platform()}
-║    Développeurs : Djalega++||Luffy
+║    𝚸𝚪𝚵𝐅𝚰𝚾 : ${s.PREFIXE}
+║    𝚯𝐖𝚴𝚵𝚪 : ${s.OWNER_NAME}    
+║    𝚳𝚯𝐃𝚵 : ${mode}
+║    𝐂𝚯𝚳𝚳𝚫𝚴𝐃𝐒:${cm.length}
+║    𝐃𝚫𝚻𝚵 : ${date}
+║    𝚻𝚰𝚳𝚵 : ${temps}
+║    𝚪𝚫𝚳 : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+║    𝚸𝐋𝚫𝚻𝐅𝚯𝚪𝚳 : ${os.platform()}
+║    𝐃𝚵𝛁𝚵𝐋𝚯𝚸𝚵𝚪 : 𝐂𝚫𝐋𝛁𝚰𝚴𝚵 𝚯𝚩𝐔𝚯𝚪𝚯
+║    𝚸𝚯𝐖𝚵𝚪𝚵𝐃 𝚩𝐘 𝐂𝚯𝚩𝐔≈≈𝚻𝚵𝐂
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
@@ -78,7 +79,6 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         repondre("🥵🥵 Menu erreur " + e);
     }
 });
-/*
 
 
 module.exports.commande =()=>
@@ -137,7 +137,7 @@ var tt=[]
 //  if(!infoCom.categorie) infoCom.categorie="General"
 // tabCat[infoCom.categorie].push(infoCom.nomCom[0])
 //  tabCmd[infoCom.nomCom[0]]
-/*  for(a of infoCom.categorie)
+  for(a of infoCom.categorie)
      {
        if(!msg.includes(a))
        {
@@ -149,15 +149,14 @@ var tt=[]
 //msg+=infoCom.categorie+infoCom.nomCom[0]
 //msg+=`🪰 ${infoCom.nomCom[0]} `+"\n"
 // tu = infoCom.nomCom[1]
-/*  for(var b=0;b<=infoCom.nomCom[0].length;b++)
+  for(var b=0;b<=infoCom.nomCom[0].length;b++)
      {
        msg+=infoCom.nomCom[b]
-     }*/
-/** ************************** */
-// for (var a of infoCom.nomCom[0])      {
-// console.log("aaaa "+a +" "+typeof a)
-//  tu.push(a)
-// msg+=a.normalize()+"\n"
+     }
+for (var a of infoCom.nomCom[0])     
+    { console.log("aaaa "+a +" "+typeof a)
+tu.push(a)
+ msg+=a.normalize()+"\n"
 // msg+=infoCom.nomCom[0]
 // msg+=infoCom.nomCom[0]
 // msg+=infoCom.nomCom[0]
