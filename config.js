@@ -1,7 +1,8 @@
-//#ENJOY
-const fs = require("fs-extra");
-if (fs.existsSync(".env"))
-  require("dotenv").config({ path: __dirname + "/.env" });
+const { zokou } = require('../framework/zokou');
+const traduire = require("../framework/env") ;
+const { default: axios } = require('axios');
+//const conf = require('../set');
+
 global.audio = "";
 global.video = "";
 global.port = process.env.PORT;
